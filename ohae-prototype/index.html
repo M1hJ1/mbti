@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>오해폭탄 프로토타입</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Apple SD Gothic Neo", "Segoe UI", sans-serif;
+      background: #FAF7F2;
+      color: #24212B;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 24px;
+    }
+
+    .card {
+      max-width: 720px;
+      width: 100%;
+      background: #ffffff;
+      border: 1px solid rgba(36, 33, 43, 0.08);
+      border-radius: 32px;
+      padding: 48px;
+      box-shadow: 0 24px 80px rgba(36, 33, 43, 0.08);
+    }
+
+    .badge {
+      display: inline-flex;
+      padding: 8px 14px;
+      border-radius: 999px;
+      background: #F1ECFF;
+      color: #7C5CFF;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 24px;
+    }
+
+    h1 {
+      font-size: 48px;
+      line-height: 1.12;
+      letter-spacing: -0.04em;
+      margin: 0 0 20px;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #6F687A;
+      margin: 0 0 32px;
+    }
+
+    .steps {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+      margin-bottom: 32px;
+    }
+
+    .step {
+      background: #FAF7F2;
+      border-radius: 20px;
+      padding: 18px;
+      font-size: 15px;
+      font-weight: 700;
+    }
+
+    .buttons {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+    }
+
+    a {
+      text-decoration: none;
+      border-radius: 18px;
+      padding: 16px 22px;
+      font-weight: 800;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .primary {
+      background: #7C5CFF;
+      color: white;
+    }
+
+    .secondary {
+      background: #F1ECFF;
+      color: #7C5CFF;
+    }
+
+    @media (max-width: 640px) {
+      .card {
+        padding: 28px;
+        border-radius: 24px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      .steps {
+        grid-template-columns: 1fr;
+      }
+
+      a {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <div class="badge">Prototype Space</div>
+
+    <h1>오해폭탄 프로토타입 준비 중</h1>
+
+    <p>
+      이곳은 오해폭탄 바이브코딩 프로토타입이 올라갈 공간입니다.
+      현재 와이어프레임과 핵심 플로우를 정리 중이며, 완성 후
+      프로젝트 방 만들기, 카드 응답, 임시 리포트, 폭탄 해제,
+      팀플 생존 계약서 흐름을 체험할 수 있습니다.
+    </p>
+
+    <section class="steps">
+      <div class="step">1. 프로젝트 방 만들기</div>
+      <div class="step">2. 5개 카드 응답</div>
+      <div class="step">3. 오해 리포트 확인</div>
+      <div class="step">4. 생존 계약서 완성</div>
+    </section>
+
+    <div class="buttons">
+      <a class="primary" href="https://teambomb.framer.website/">랜딩 페이지로 돌아가기</a>
+      <a class="secondary" href="https://tally.so/r/dWKkNr">테스트 신청하기</a>
+    </div>
+  </main>
+</body>
+</html>
